@@ -1,0 +1,71 @@
+/* Assuming each part should take 50% of the width */
+.login1 {
+    width: 100%;
+    height:90vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Divide into equal parts */
+}
+
+.login1 .item1 {
+    width: 50%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login1 .item1 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+}
+
+.login1 .item1 form input {
+    /*width: auto; */
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    background-color: rgba(17, 25, 40, .6);
+    color: white;
+    border-radius: 5px;
+}
+.login1 .item1 form label {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login1 .item1 form label img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.login1 .item1 form button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: #1f8ef1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500 !important;
+}
+.login1 .item1 form button:disabled  {
+    cursor: not-allowed;
+    background-color: #1f8ff19a;
+}
+
+
+.seperator1 {
+    height: 80%;
+    width: 2px;
+    background-color: #dddddd35;
+}

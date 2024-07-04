@@ -1,0 +1,190 @@
+.chat {
+    flex: 2;
+    border-left: 1px solid #dddddd35;
+    border-right: 1px solid #dddddd35;
+    display: flex;
+    flex-direction: column;
+}
+/* TOP ----------------------------------*/
+.chat .top {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd35;
+}
+.chat .top .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.chat .top .user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat .top .user .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.chat .top .user .texts span {
+    font-size: 18px;
+    font-weight: bold;
+}
+.chat .top .user .texts p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #a5a5a5;
+}
+.chat .top .icons {
+    display: flex;
+    gap: 20px;
+}
+.chat .top .icons img {
+    width: 20px;
+    height: 20px;
+}
+/* center ----------------------------------*/
+.chat .center {
+    padding: 20px;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* Styles for the scrollbar */
+.chat .center::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.chat .center::-webkit-scrollbar-track {
+    background: tansparent; 
+}
+.chat .center::-webkit-scrollbar-thumb {
+    background: #6a1818; 
+    border-radius: 5px;
+}
+
+.chat .center .message_own {
+    max-width: 70%;
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;  /*  make it right */
+}
+.chat .center .message {
+    max-width: 70%;
+    display: flex;          
+    gap: 20px;
+}
+.chat .center .message_own img,
+.chat .center .message img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat .center .message_own .texts,
+.chat .center .message .texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.chat .center .message_own .texts img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.chat .center .message .texts img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.chat .center .message .texts p{
+    padding: 20px;
+    border-radius: 15px;
+    background-color:  rgba(40, 208, 63, 0.881);
+    backdrop-filter: blur;   
+}
+.chat .center .message_own .texts p{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+    background-color:  rgba(9, 63, 163, 0.881);;   
+}
+.chat .center .message_own .texts span,
+.chat .center .message .texts span{
+    font-size: 13px;
+}
+
+/* Bottom ----------------------------------*/
+.chat .bottom {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #dddddd35;
+    margin-top: auto;
+}
+
+.chat .bottom .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.chat .bottom .icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.chat .bottom input {
+    flex: 1;
+    background-color: rgba(17,25, 40, .5);
+    border: none;
+    margin-left: 20px;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 20px; 
+}
+
+.chat .bottom .emoji img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.chat .bottom .emoji {
+    position: relative;
+}
+.chat .bottom .emoji .picker {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+
+.chat .bottom .sendButton {
+    margin-left: 20px; 
+    color: white;
+    background-color: #5183fe;
+    padding: 10px 20px;
+    bottom: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat .bottom .sendButton:disabled {
+    background-color: #5182feb4;
+    cursor: not-allowed;
+}

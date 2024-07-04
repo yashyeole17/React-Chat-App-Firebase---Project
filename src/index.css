@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 10px;
+  background-color: aliceblue;
+  background-image: url("./assets/11.jpg"); 
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important; 
+  background-size: cover; 
+  color: white;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

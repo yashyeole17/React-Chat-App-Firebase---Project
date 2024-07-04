@@ -1,0 +1,135 @@
+
+.detail {
+    flex: 1;
+}    
+.detail .user {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #dddddd35;
+}
+.detail .user img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.detail .info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ 
+.detail .info .option .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail .info .option .title img {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(17, 25, 40, .3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.detail .info .option .photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.detail .info .option .photos 
+.photoItem  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.detail .info .option .photos 
+.photoItem .photoDetail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.detail .info .option .photos 
+.photoItem .photoDetail img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.detail .info .option .photos 
+.photoItem .photoDetail  span{
+    font-size: 16px;
+    color: lightgray;
+    font-weight: 300;
+}
+.detail .info .option .photos 
+.photoItem .icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 30%;
+    background-color: rgba(17, 25, 40, 0.3);
+    padding: 10px;
+    margin-left: auto;
+}
+.detail .buttons {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px;
+    
+}
+
+.detail .buttons button {
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.detail .buttons .button1 {
+    background-color: rgb(221, 68, 68);
+    margin-right: 25px;
+}
+
+.detail .buttons .button2 {
+    background-color: rgb(35, 67, 211);
+    margin-left: 25px;
+}
+
+.detail .buttons button:hover {
+    background-color: red;
+}
+
+.detail .buttons .button2:hover {
+    background-color: blue;
+}
+
+
+
+/* Scrollbar */ 
+.detail .info  {
+    max-height: 370px !important;
+    overflow-y: auto !important;
+} 
+.detail .info::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.detail .info::-webkit-scrollbar-track {
+    background: tansparent; 
+}
+.detail .info::-webkit-scrollbar-thumb {
+    background: #6a1818; 
+    border-radius: 5px;
+}
